@@ -1,0 +1,129 @@
+
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: "poppins", sans-serif;
+}
+
+.menubar {
+    background: url(valeriia-neganova-0bw12lrFV3E-unsplash.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.but_one i {
+    color: #fff;
+    font-size: 30px;
+    position: absolute;
+    left: 30px;
+    transition: all 0.3s linear;
+    
+}
+
+.sidebar {
+    position: fixed;
+    color: #fff;
+    left: -300px;
+    height: 100vh;
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
+    transition: all 0.3s linear;
+}
+
+.sidebar .logo {
+    position: absolute;
+    width: 100%;
+    line-height: 50px;
+    box-shadow: 0 2px 6px rgba(255, 255, 255, 0.5);
+    height: 60px;
+}
+    
+.sidebar .logo a {
+    left: 70px;
+    position: absolute;
+    color: #fff;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.sidebar .but_two {
+    color: rgb(191, 186, 186);
+    position: absolute;
+    left: 275px;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+
+.sidebar .menu {
+    position: absolute;
+    width: 100%;
+    top: 80px;
+}
+
+.menu li {
+    margin-top: 20px;
+    padding: 14px 20px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+.menu i {
+    padding-right: 7px;
+    font-size: 20px;
+}
+
+.sidebar .socialmediabar {
+    position: absolute;
+    left: 50px;
+    bottom: 32px;
+}
+
+.sidebar .socialmediabar a {
+    color: #fff;
+    font-size: 20px;
+    opacity: 0.4;
+}
+
+.sidebar .socialmediabar i {
+    padding-right: 20px;
+    
+}
+
+#check {
+    display: none;
+}
+
+.sidebar .menu li:hover {
+    box-shadow: 0 0 4px rgba(255, 255, 255, 1);
+}
+
+.sidebar .socialmediabar a:hover {
+    font-size: 30px;
+    opacity: 1;
+    transform: scale(1);
+}
+
+.but_one i:hover {
+    font-size: 40px;
+}
+
+.but_two i:hover {
+    font-size: 30px;
+}
+
+#check:checked ~ .sidebar {
+    left: 0;
+}
+
+#check:checked ~ .but_one i {
+    opacity: 0;
+}
+
